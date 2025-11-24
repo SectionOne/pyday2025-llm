@@ -1,0 +1,54 @@
+COFFEE SHOP EMPIRE - GLOBAL LOCATIONS
+=====================================
+
+AMERICAS:
+- USA: 245 locations
+  - New York: 42 stores
+  - Los Angeles: 38 stores
+  - Chicago: 27 stores
+  - Seattle: 19 stores
+  - Miami: 15 stores
+  - Austin: 12 stores
+  - Portland: 8 stores
+  - Other cities: 84 stores
+
+- Canada: 67 locations
+  - Toronto: 18 stores
+  - Vancouver: 12 stores
+  - Montreal: 11 stores
+  - Calgary: 6 stores
+  - Other cities: 20 stores
+
+- Brazil: 89 locations
+  - São Paulo: 31 stores
+  - Rio de Janeiro: 18 stores
+  - Brasília: 8 stores
+  - Other cities: 32 stores
+
+- Mexico: 45 locations
+  - Mexico City: 16 stores
+  - Guadalajara: 7 stores
+  - Monterrey: 5 stores
+  - Other cities: 17 stores
+
+ASIA:
+- Japan: 156 locations
+- South Korea: 98 locations
+- China: 234 locations
+- India: 67 locations
+
+EUROPE:
+- UK: 123 locations
+- France: 87 locations
+- Germany: 94 locations
+- Italy: 76 locations
+
+MIDDLE EAST:
+- UAE: 58 locations
+- Saudi Arabia: 43 locations
+- Qatar: 28 locations
+
+Total Locations: 1,408 stores worldwide
+Founded: 2012
+CEO: Margaret Chen
+Headquarters: Seattle, Washington
