@@ -70,3 +70,12 @@ agent # If 'agent' is a script entrypoint defined in pyproject.toml
 source .venv/bin/activate
 python3 script.py
 ```
+
+## Links
+
+https://platform.openai.com/docs/guides/function-calling
+
+## Meta
+
+Author: Ricardo
+X (Twitter): [@ricardoanderegg](https://x.com/ricardoanderegg)
