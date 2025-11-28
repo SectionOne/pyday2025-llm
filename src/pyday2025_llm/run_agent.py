@@ -27,6 +27,25 @@ TASKS:
 """
 
 
+def get_openai_key() -> str:
+    """
+    Retrieve the OpenAI API key from environment or file.
+
+    Returns:
+        The OpenAI API key as a string.
+    """
+
+    api_key_env = os.getenv("OPENAI_API_KEY")
+    if api_key_env:
+        return api_key_env
+    api_key_file = Path.cwd() / ".openai_api_key"
+    if api_key_file.exists():
+        file_contents = api_key_file.read_text().strip()
+        if file_contents:
+            return file_contents
+    raise ValueError("OpenAI API key not found in environment or .openai_api_key")
+
+
 class Agent:
     def __init__(
         self,
@@ -79,7 +98,7 @@ def main() -> int:
     """Main CLI function."""
 
     args = parse_args()
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    openai_api_key = get_openai_key()
     client = OpenAI(api_key=openai_api_key)
     max_loops = args.max_loops
     base_path = Path(args.base_path)
