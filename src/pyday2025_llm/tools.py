@@ -41,6 +41,7 @@ def pydantic_to_tool_params(
 
     # For strict mode, all properties must be in required array
     # and additionalProperties must be false
+    # https://platform.openai.com/docs/guides/function-calling#strict-mode
     if "properties" in model_schema:
         model_schema["required"] = list(model_schema["properties"].keys())
     model_schema["additionalProperties"] = False
