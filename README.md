@@ -78,4 +78,5 @@ https://platform.openai.com/docs/guides/function-calling
 ## Meta
 
 Author: Ricardo
+
 X (Twitter): [@ricardoanderegg](https://x.com/ricardoanderegg)
