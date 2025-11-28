@@ -1,5 +1,11 @@
 # PyDay 2025 LLM Project
 
+## URL
+
+```
+t3.polyrand.net
+```
+
 ## Prerequisites
 
 - Python 3.12+ (recommended)
@@ -25,8 +31,8 @@ uv lock
 ### 3. Run the project
 
 ```bash
-# Run a Python script
-uv run pyday2025-llm
+# Run a Python "script entrypoint" defined in pyproject.toml
+uv run agent
 
 # Run any command in the project virtual environment
 uv run python script.py
@@ -58,7 +64,7 @@ pip install -r requirements.txt
 
 ```bash
 source .venv/bin/activate  # Ensure virtual environment is activated
-pyday2025-llm
+agent # If 'agent' is a script entrypoint defined in pyproject.toml
 
 # Run any command (ensure virtual environment is activated)
 source .venv/bin/activate
