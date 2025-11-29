@@ -69,17 +69,18 @@ class Agent:
         self.SYSTEM_PROMPT = """You are a helpful assistant.
 """.strip()
 
-    # TASK: Add call_tool
     # TASK: Add validation to call_tool
 
     def call_tool(self, tool_name: str, parameters: dict) -> Any:
-        ...
-        if tool_name == ...:
+        if tool_name == "list_files":
             validated_params = ListFilesParams.model_validate(parameters)
             result = list_files(validated_params.folder)
-            ...
         else:
             return "Unknown tool"
+
+        if result.status_code != 0:
+            return f"Error: {result.error_message}"
+        return result.output
 
     def one_turn(self) -> Any:
         response = self.client.chat.completions.create(
