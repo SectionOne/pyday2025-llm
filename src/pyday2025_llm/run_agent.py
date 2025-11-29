@@ -67,8 +67,13 @@ class Agent:
         self.console = Console()
         self.tools = tools or []
 
-        self.SYSTEM_PROMPT = """You are a helpful assistant.
-""".strip()
+        self.SYSTEM_PROMPT = f"""You are a helpful assistant.
+
+You have access to tools to list files.
+
+You base path is set to: {self.base_path_abs}, all the function calls MUST use paths relative to this base path, never use absolute paths.
+For example, to list the folder f{self.base_path / "some_folder"}, you must only pass "some_folder" as the folder argument.
+"""
 
     # TASK: Add validation to call_tool
 
