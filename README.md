@@ -75,6 +75,8 @@ python3 script.py
 
 https://platform.openai.com/docs/guides/function-calling
 
+https://github.com/openai/openai-python/blob/main/examples/parsing_tools.py
+
 ## Meta
 
 Author: Ricardo
